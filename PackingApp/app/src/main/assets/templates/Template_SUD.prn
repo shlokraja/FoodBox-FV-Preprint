@@ -1,0 +1,33 @@
+<xpml><page quantity='0' pitch='125.1 mm'></xpml>SIZE 45.5 mm, 125.1 mm
+DIRECTION 0,0
+REFERENCE 0,0
+OFFSET 0 mm
+SET PEEL OFF
+SET CUTTER OFF
+SET PARTIAL_CUTTER OFF
+<xpml></page></xpml><xpml><page quantity='1' pitch='125.1 mm'></xpml>SET TEAR ON
+CLS
+CODEPAGE 1252
+TEXT 349,782,"0",180,5,7,"SHTMP_Category_Name"
+TEXT 347,42,"0",90,10,11,"Prepared & Packed By"
+BOX 285,759,358,785,3
+TEXT 283,370,"0",90,9,9,"SHTMP_Ingredients1"
+TEXT 261,782,"0",180,7,7,"SHTMP_ItemCode"
+TEXT 165,782,"0",180,7,7,"SHTMP_Land_Mark"
+BOX 197,760,279,786,3
+BOX 109,760,191,786,3
+TEXT 243,370,"0",90,9,9,"SHTMP_Ingredients2"
+TEXT 203,370,"0",90,9,9,"SHTMP_Ingredients3"
+TEXT 163,370,"0",90,9,9,"SHTMP_Sides"
+BOX 13,761,103,785,3
+QRCODE 275,855,L,4,A,0,M2,S7,"SHTMP_QRValue"
+TEXT 284,944,"0",0,9,9,"SHTMP_Value1"
+TEXT 85,782,"0",180,7,7,"SHTMP_Value2"
+TEXT 285,818,"0",0,8,9,"SHTMP_Value2"
+TEXT 50,42,"0",90,12,12,"Please Consume within 45 minutes"
+BITMAP 131,60,18,232,1,ÿ÷wwÿÿwwÿÿÿÿÿÿÿÿÿè ‚?ÿþ ÿÿÿþîîîÿÿÿa†_ÿöa—ÿÿÒ ‚ÿþ ‚?ÿâ ƒÿÿÂ ‚ÿôAÿPAÿÿ@   ÿøÃ0ÿÿ0Ã0ÿÿA_ÿðA_ýAÿUUU_ÿâ ‚?ü‚ ‚þÿÿÿÿÿÆa†õ†a†ÿŸÿÿÿÿÿâ ‚?à‚ ‚?þÿÿÿÿÿÐA_ÔA_ýÿÿÿÿÿ°Ã0ÿŒ0Ã0ßþÿÿÿÿÿÐADA_ÿUUU_ÿ‚ ‚> ‚ ‚ÿ    ÿ†a†]a†a†ÿÂ ‚ÿ‚ ‚< ‚ ‚ÿÂ ‚ÿADTuAWÿôDDD_ÿ°Ãîþó0Ã0ÏÿþïîþÿÿGÿÿÑUU_ÿÿÿÿÿÿÿ‚ÿÿˆ ‚ÿ‚ÿÿÿÿÿÿÿ†ÿÿXa†ÿ†ÿ×]u×_ÿ‚ÿþ ‚ÿÿ‚þ‚ ‚ÿGÿôAÿÿWÿ    ÿ°ÃÿðÃ7ÿþ0ÏþA_ÿADPAEDGÿUUT_ÿ‚ ‚ Ž ‚þÿÿþÿ†a†aŸa†ÿŸÿÿþÿ‚ ‚ ¾ ‚ÿÿÿþÿÐAAAWÿÿÿüÿ°Ã0ÃþÃ0ÏÿÿÿøÿÐAAÿA_ÿÿÿð_ÿÂ ‚#þ ‚?ÿ€ÿÿàÿÆa†gÿa†_ÿÂ]uÂÿâ ‚/þ ‚?ÿâ ‚ÿÿÐAA_ÿAÿð  ÿÿðÃ0ÃþÃ0ÿÿþAÿÿôAAÿAÿÿEE_ÿÿú ‚ÿþ ƒÿÿÿÿïÿÿÿÿa†ÿÿa‡ÿÿÿÿÿÿÿÿÿ ‚ÿþ Ÿÿÿ««««¿ÿÿA_ÿÿUUÿÿ@@@@_ÿÿû2ÿÿÿÿÿÿÿþA_ÿÿÿÝßÿÿÿÿÿÿÿÿA_ÿÿÿÿÿÿÿÿÿÿÿÿþ    ÿÿÿ÷ÿÿ÷ÿÿ÷ÿÿÿ×_w×ÿÿþîîîîîîîîÿÿÿÿÿÿÿÿÿÑAA_ÿÿÿÿÿÿÿÿÃ0Ã0Ã0ßÿ¿ÿ¿¿ÿÿüAAA_ÿTEDT_ÿú ‚ ‚ ‚þ    ÿöa†a†a†ÿ‚ ‚ÿò ‚ ‚ ‚þ‚ ‚ÿðAAA_ÿUTTÿðÃ0Ã0Ã0Ïÿÿÿþ_ÿÐAAA_ÿÿýü_ÿÂ ‚ ‚ ‚ÿÿþüÿÆa†a†a†ÿÿÿ'þ_ÿÂ ‚ ‚ ‚ÿÿþ'ú?ÿÐAAA_ÿÿÿPÿ°Ã0Ã0Ã0ßÿÿÿ„ÿPAAA_ÿÿÿÄÿ‚ ‚ ‚ ‚ÿÿÿàÿÿ†a†a†a†ÿÿÿõ—ÿÿ‚
+ªªªªªªªª¿ÿÿÿÿÿÿÿGÿÿÿÿÿÿÿÿÿUUUU_ÿ°ÏÿÿÿÿÿÿÿÿÿþA_ÿ_ÿÿÿÿÿÿÿÿÿÿA_ÿ‚ÿÿÿÿÿÿÿÿÿþ    ÿ†w÷w÷w÷ÿÆLdÆ_ÿ‚
+"¢*"¢*"¢?ÿÿÿÿÿÿÿAAA_ÿÿÿÿÿÿÿ°Ã0Ã0Ã0ßÿÿÿÿÿÿÿPAAA_ÿÿÿÿÿÿÿ‚ ‚ ‚ ‚ÿÿÿÿÿÿÿÆa†a†a†ÿÿÿÿÿÿÿ‚ ‚ ‚ ‚ÿÿÿÿÿÿÿÐAAA_ÿÿÿÿÿÿÿðÃ0Ã0Ã0ÏÿÿÿÿÿÿÿÐAAA_ÿÿÿÿÿÿÿâ ‚ ‚ ‚ÿÿÿÿÿÿÿöa†a†a†ÿÿÿÿÿÿÿò ‚ ‚ ‚ÿÿÿÿÿÿÿôAAA_ÿÿÿÿÿÿÿüÃ0Ã0Ã0ßþ˜ÉŒ˜ÿÿýAAA_þ  ÿÿ ‚ ‚ ‚þ    ÿÿØa†a†a†ý    ÿÿþª«ª«ª«ª«¿þ    ÿÿÿÿÿÿÿÿÿÿÿDDD_ÿÿÿÿÿÿÿÿÿÿÿÿÿþéþÿÿÕUUUUUUUUU_ÿUTU_ÿ‚ ‚ ‚ ‚þ    ÿÆa†a†a†ü    ÿÂ ‚ ‚ ‚þ    ÿÐAAA_ý    ÿ°Ã0Ã0Ã0ßþA_ÿÐAAA_ÿUUUUÿÂ ‚ ‚ ‚ÿÿÿÿÿÿÿÆa†a†a†ÿÿÿÿÿÿÿ‚ ‚ ‚ ‚ÿÿÿÿÿÿÿÐAAA_ÿÿÿÿÿÿÿðÃ0Ã0Ã0ÏÿÿÿÿÿÿÿÐAAA_ÿÿÿÿÿÿÿ‚ ‚ ‚ ‚ÿÿÿÿÿÿÿÆa†a†a†ÿÿÿÿÿÿÿÂ ‚ ‚ ‚ÿÿÿÿÿÿÿÐAAA_ÿÿÕUÿÿÿ°Ã0Ã0Ã0ßÿþA?ÿÿÐEUUUUUUU_ÿÔ  ÿÿÂÿÿÿÿÿÿÿ‚ÿ€   ÿÿÆÿÿÿÿÿÿÿ†ÿ    _ÿ‚ÿÿÿÿÿÿÿ‚þ    ?ÿÐGÿÿÿÿÿÿÿ_ü UT@ÿðÃîþïîþïî0Ïþÿÿð_ÿÐAAA_üUU@ÿ‚ ‚ ‚ ‚þ    ?ÿÆa†a†a†ÿ    ÿÂ ‚ ‚ ‚ÿ€   ÿÐAAA_ÿÐ  ÿÿðÃ0Ã0Ã0ÿÿþAÿÿÐAAA_ÿÿUUÿÿâ ‚ ‚ ‚?ÿÿÿÿÿÿÿöa†a†a†ÿÿÿÿÿÿÿò ‚ ‚ ‚ÿÿÿÿÿÿÿôAAAÿÿÿÿÿÿÿøÃ0Ã0Ã0ÿÿÿÿÿÿÿÿüAAAÿÿÿÿÿÿÿÿþ ‚ ‚ ƒÿÿÿÿÿÿÿÿÿa†a†a‡ÿÿÿÿÿô_ÿÿˆ ‚ ‚ ÿÿÿÿÿøÿÿÑAA_ÿÿÝÝÝÔÿÿû0Ã0ÃÿÿþA_ÿÿÿwwwwwwwÿÿü    ÿÿÿÿÿÿÿÿÿÿÿÿþ    ÿßÝý×ÝõßÝý×ßý    ÿ‚ ‚ ‚ ‚þ    ÿÐAAA_ÿDDDDÿðÃ0Ã0Ã0ßÿÿÿÿø_ÿÐAAA_ÿÿÿÿôÿ‚ ‚ ‚ ‚ÿÿÿÿøÿÆa†a†a†ÿÿÿÿõÿÂ ‚ ‚ ‚ÿÿÿÿÿÿÿÐAAA_ÿÿÿÿÿÿÿ°Ã0Ã0Ã0ßÿÿÿÿÿÿÿÐAAA_ÿÿÿÿÿÿÿÂ ‚ ‚ ‚ÿÿÿÿÿÿÿÆa†a†a†ÿÿÿÿÿÿÿ‚ ‚ ‚ ‚ÿÿÿÿÿÿÿÐAAA_ÿÿÿÿÿÿÿðÃ0Ã0Ã0ÏÿÿÿÿÿÿÿÐAAA_ÿUUUU_ÿ‚ ‚ ‚ ‚þ    ÿÆ\eÆ\a†\eÆ_ü    ÿÿÿÿÿÿ Ÿÿÿÿÿþ    ÿÿÿÿÿÿÿÿÿÿý    ÿÿÿÿÿÿŒ?ÿÿÿÿþA_ÿÿÿÿÿÿDÿÿÿÿüTTÿÿÿÿÿÿ ÿÿÿÿþüøÿ×u—a—u—ýüôÿ‚ ‚ ‚ ‚þüø?ÿÐAAA_ÿwÿÿÿðÃ0Ã0Ã0ÏÿÿÿÿÿÿÿÐAAA_ÿÿÿÿÿÿÿ‚ ‚ ‚ ‚ÿÿÿÿÿÿÿÆa†a†a†ÿÿÿÿÿÿÿÂ ‚ ‚ ‚ÿÿÿÿÿÿÿÐAAA_ÿÿÿÿÿÿÿ°Ã0Ã0Ã0ßÿÿÿÿÿÿÿÐAAA_ÿÿÿÿÿÿÿÂ ‚ ‚ ‚ÿÿÿÿÿÿÿÆa†a†a†ýUUUU_ÿ‚ ‚ ‚ ‚þ    ÿÐAAA_ü    ÿðÃ0Ã0Ã0ÏþA_ÿÐAAA_ý    ÿ‚ ‚ ‚ ‚þ    ?ÿ÷w÷w÷w÷üwwwÿÿÿÿÿÿÿÿÿÿÿÿþÿÿÿÿÿ×ÿÿÿÿÿÿÿÿÿÿýWÿÿÿÿÿ°ÿÿÿÿÿÿÿÿÿÿÿÿÿÿûÿÿÐEÿÿÿÿÿÿÿÿÿÿÿ÷õÿÂ/ÿÿÿÿÿÿÿÿÿÿÿãàÿÆa×ÿÿÿÿÿÿÿÿÿÿñÆ_ÿ‚ ‚¿ÿÿÿÿÿÿÿÿÿà‚?ÿÐAUÿÿÿÿÿÿÿÿÄ UðÃ0Ã/ÿÿÿÿÿÿÿÿÌÃÿÐAAUÿÿÿÿÿÿñDA‚ ‚ ‚¿ÿÿÿÿÿð   ?Æa†a†wÿÿÿ×xa†Â ‚ ‚'ÿÿþ‚( ‚?ÐAAAUÿü    W°Ã0Ã0Ã0ÿü0ÁÃÐAAA_ôAAÂ ‚ ‚ ‚à    Æa†a†a†á† †!‚ ‚ ‚ ‚  ‚!ÔAAA_ @   ÿã0Ã0Ã0Ï8ã0Á
+ÿýTAA_AAÿÿþ‚ ‚ ‚    !ÿÿÿ†a†a†a‚!‚!ÿÿþ‚> ‚ ‚ ‚ ‚#ÿÿÿ_ýUA] @   ÿÿþ0ßÿþÃ0ß8á0Ãÿÿÿ_uTA_AA_ÿÿþ‚ ‚ ‚     ÿÿÿ†a†a†`‚`†'ÿÿú‚ ‚ ‚ ‚ ‚ #ÿuDAA_     @þÃ0Ã0Ã0Ï0Ã0ÃÐAAA_A‚ ‚ ‚ ‚€     Æa†a†a†á‚ ‚aÂ ‚ ‚ ‚à‚ ‚!ÐAAA_Ð    °Ã0Ã0Ã3ÿü0ÁCÐAAAEWÿôAAÂ ‚ ‚/ÿÿþ   ‚ /Æa†a†]ÿÿÿÿÒa†‚ ‚ ‹ÿÿÿÿÿúø ‚?ÐAAWÿÿÿÿÿÿõ ðÃ0Ã/ÿÿÿÿÿÿÿóÃÐAUÿÿÿÿÿÿÿÿõDA‚ ‹ÿÿÿÿÿÿÿÿÿÿÀ  ÿÆe÷ÿÿÿÿÿÿÿÿÿÿáÆ]ÿÂ?ÿÿÿÿÿÿÿÿÿÿÿà‚?ÿÑUÿÿÿÿÿÿÿÿÿÿÿÿÑÀÿ»ÿÿÿÿÿÿÿÿÿÿÿÿÿÿðÿÿßÿÿÿÿÿÿÿÿÿÿÿÿÿÿõÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+PRINT 1,1
+<xpml></page></xpml><xpml><end/></xpml>

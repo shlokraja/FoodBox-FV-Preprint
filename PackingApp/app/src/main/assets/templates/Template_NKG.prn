@@ -1,0 +1,34 @@
+<xpml><page quantity='0' pitch='125.1 mm'></xpml>SIZE 45.5 mm, 125.1 mm
+DIRECTION 0,0
+REFERENCE 0,0
+OFFSET 0 mm
+SET PEEL OFF
+SET CUTTER OFF
+SET PARTIAL_CUTTER OFF
+<xpml></page></xpml><xpml><page quantity='1' pitch='125.1 mm'></xpml>SET TEAR ON
+CLS
+CODEPAGE 1252
+TEXT 349,782,"0",180,5,7,"SHTMP_Category_Name"
+TEXT 347,42,"0",90,10,11,"Prepared & Packed By"
+BOX 285,759,358,785,3
+TEXT 283,370,"0",90,9,9,"SHTMP_Ingredients1"
+TEXT 261,782,"0",180,7,7,"SHTMP_ItemCode"
+TEXT 165,782,"0",180,7,7,"SHTMP_Land_Mark"
+BOX 197,760,279,786,3
+BOX 109,760,191,786,3
+TEXT 243,370,"0",90,9,9,"SHTMP_Ingredients2"
+TEXT 203,370,"0",90,9,9,"SHTMP_Ingredients3"
+TEXT 163,370,"0",90,9,9,"SHTMP_Sides"
+BOX 13,761,103,785,3
+QRCODE 275,855,L,4,A,0,M2,S7,"SHTMP_QRValue"
+TEXT 284,944,"0",0,9,9,"SHTMP_Value1"
+TEXT 85,782,"0",180,7,7,"SHTMP_Value2"
+TEXT 285,818,"0",0,8,9,"SHTMP_Value2"
+TEXT 50,42,"0",90,12,12,"Please Consume within 45 minutes"
+BITMAP 184,64,9,232,1,ÿÿÿqÇÿÿÿÿÿà  ÿÿÿÿÿÇ<óÀÿÿÿÿÿŸÿÿüÿÿÿÿ?ÿÿþÿÿÿÿ8A?ÿÿÿÿza‡?ÿÿÿþwqÇÿÿÿþgqÃÿÿÿþp  ŸÿÿÿþyçžiŸÿÿÿþqÿÿëŸÿÿÿþeÿÿçŸÿÿÿþåÿÿÇŸÿÿÿþe?ÃŸÿÿÿþpÿ‹Ÿÿÿÿþxþ9ŸÿÿÿþpÿÀŸÿÿÿþeÿÇŸÿÿÿþåÿÿÇŸÿÿÿþeÿÿÃŸÿÿÿþqÿÿëŸÿÿÿþxãŽ)Ÿÿÿÿþp  ŸÿÿÿþgÇŸÿÿÿþçpGŸÿÿÿþfÿƒŸÿÿÿþpÿÿÓŸÿÿÿþyÿÿùŸÿÿÿþqÿÿëŸÿÿÿþaàçŸÿÿÿþçÜqçŸÿÿÿþaÈ!ãŸÿÿÿþqðãŸÿÿÿþyÿÿéŸÿÿÿþpÿÿÛŸÿÿÿþfÿÿ‡Ÿÿÿÿþç?ÿŸÿÿÿþg  ÃŸÿÿÿþpò3Ÿÿÿÿþx 9Ÿÿÿÿþpÿ;Ÿÿÿÿþfÿÿ‡ŸÿÿÿþçÿÿÇŸÿÿÿþeÿÿÃŸÿÿÿþqàãŸÿÿÿþyÃ
+éŸÿÿÿþyÃëŸÿÿÿþaàçŸÿÿÿþåÿÿÇŸÿÿÿþeÿÿÃŸÿÿÿþpÿÿÓŸÿÿÿþxÿ9ŸÿÿÿþpÔ;Ÿÿÿÿþg(ÇŸÿÿÿþæ`‡ŸÿÿÿþeqÃŸÿÿÿþqÿÿëŸÿÿÿþyÿÿéŸÿÿÿþqÿÿëŸÿÿÿþeÿÿçŸÿÿÿþåÀÇŸÿÿÿþeìqÃŸÿÿÿþqàãŸÿÿÿþxÿÿùŸÿÿÿþpÿÿÛŸÿÿÿþfÿÿÇŸÿÿÿþç?ÿ‡ŸÿÿÿþgðCŸÿÿÿþpà 3ŸÿÿÿþxAŸÿÿÿþqãŽkŸÿÿÿþeÿÿçŸÿÿÿþåÿÿÇŸÿÿÿþeÿÿÃŸÿÿÿþqÿÿëŸÿÿÿþyà ŸÿÿÿþqãŽ;Ÿÿÿÿþeèa‡ŸÿÿÿþåìqÇŸÿÿÿþeìqÃŸÿÿÿþpC3ŸÿÿÿþxÃŽ9Ÿÿÿÿþp@ Ÿÿÿÿþe¾ûÇŸÿÿÿþåÿÿÇŸÿÿÿþeÿÿÃŸÿÿÿþqÿÿëŸÿÿÿþy÷ÿéŸÿÿÿþqááëŸÿÿÿþeìáçŸÿÿÿþåìáÇŸÿÿÿþeìáÃŸÿÿÿþqáíãŸÿÿÿþyãéŸÿÿÿþpŸÿÿÿþfq‡ŸÿÿÿþçqÇŸÿÿÿþgqÃŸÿÿÿþpÃ3ŸÿÿÿþxãŽ9Ÿÿÿÿþpa†Ÿÿÿÿþfa‡ŸÿÿÿþçqÇŸÿÿÿþgqÃÿÿÿüpÃ3ÇÿÿÿðxãŽ9ãÿÿÿàpa†ùÿÿÿÀfI†<ÿÿ€ç9Ãÿÿ g¹Ã?ÿþpÁ¼0ÇŸÿüxãŒ8ãÏÿøpc 0Çÿøbfi†ãÿøðçùÅsÿðpgøÃqÿã ðÞü Ã9ÿã€ø¿Ü8ãœÿÃ ?|aœÿÀàˆøÆ~ÿŽûyzÿ€‡ëˆ9‡n€
+ûñœÃ‡
+wó‚0ãŽ?ƒ÷óa‡? Ïõa…g? ;Ï¾±Æs¿ ?ïïQÇsŸ ?ÿïŒ0Ã¿?}ïŽ8ã??ßçÆa‡??¿ßà†cŸ ;¯Ýó§sŸ?¿ÝïøsŸ ?ÏNnC? }çž>c?€û®}a‡? ?ÿýÿÿhg?ï¼ÿç|w?ˆŸÿþÿí|wˆÿÿ?ýóÁÎ}÷ŸúóŽÃŽÿß|ñžÄ‡ÿÿgø|ÿÂ3¯¾ðÇ¼yÿàaßÿðÇü9ÿñ€ÿÌãyÿñ1÷ŽcÓÿøÈx|8áçÿü0ga†çÿü`çqÇÇÿþ
+gqÇÿÿpÃ0ÏÿÿŒxãŽ8ÿ?ÿÿ€pa†|ÿÿàfa†øÿÿÿðçqÇ±ÿÿÿøgqÃÃÿÿÿþpÃ3ÿÿÿþxãŽ9Ÿÿÿÿþpa†Ÿÿÿÿþfa‡ŸÿÿÿþçqÇŸÿÿÿþgqÃŸÿÿÿþpÃ3ŸÿÿÿþxãŽ9Ÿÿÿÿþp  ŸÿÿÿþeÿÿçŸÿÿÿþåÿÿÇŸÿÿÿþeÿÿÃŸÿÿÿþqÿÿëŸÿÿÿþyÿÿéŸÿÿÿþpðŸÿÿÿþgügŸÿÿÿþæ?ÿ‡ŸÿÿÿþeÿÿÃŸÿÿÿþqÿëŸÿÿÿþyø‡éŸÿÿÿþqãŒëŸÿÿÿþe`'Ÿÿÿÿþäq‡ŸÿÿÿþgqÃŸÿÿÿþp  ŸÿÿÿþyÿÿéŸÿÿÿþqÿÿëŸÿÿÿþeÿÿçŸÿÿÿþåÿÿÇŸÿÿÿþeqÃŸÿÿÿþp  ŸÿÿÿþxãŽ9ŸÿÿÿþpAŸÿÿÿþeÿÿçŸÿÿÿþåÿÿÇŸÿÿÿþeÿÿÃŸÿÿÿþq÷ëŸÿÿÿþxAÿéŸÿÿÿþpþŸÿÿÿþd?ð‡Ÿÿÿÿþåþ ‡ŸÿÿÿþeþÿÃŸÿÿÿþqÿÿëŸÿÿÿþyÿÿéŸÿÿÿþqçžkŸÿÿÿþd  ŸÿÿÿþçqÇŸÿÿÿþg `ÃŸÿÿÿþpÿ3Ÿÿÿÿþxÿÿ™ŸÿÿÿþpÿÿÛŸÿÿÿþeÿÿçŸÿÿÿþçì!çŸÿÿÿþaÈ1ãŸÿÿÿþqÃÁãŸÿÿÿþxóÏéŸÿÿÿþpÿÏëŸÿÿÿþeÿÏÇŸÿÿÿþåÿï‡Ÿÿÿÿþe<êŸÿÿÿþp  3ŸÿÿÿþxãŽ9Ÿÿÿÿþpa†¿ÿÿÿÿva‡?ÿÿÿÿoqÇ?ÿÿÿÿ?¾ûï?ÿÿÿÿŸÿÿüÿÿÿÿÿÿøÿÿÿÿÿà  ÿÿÿÿÿð  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+PRINT 1,1
+<xpml></page></xpml><xpml><end/></xpml>
