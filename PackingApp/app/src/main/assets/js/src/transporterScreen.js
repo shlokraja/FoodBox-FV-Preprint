@@ -169,13 +169,10 @@ var TransporterDialog = React.createClass({
     var internetState=$('#internet-status').attr('class');
         if(internetState=='offline')
         {
-    $.confirm({
+    $.alert({
                                    icon:'fa fa-exclamation-triangle',
                                    columnClass: 'col-md-12',
                                    title: 'Internet Status',
-                                   cancelButton: Ok, // hides the cancel button.
-                                   confirmButton: false, // hides the confirm button.
-                                   closeIcon: false, // hides the close icon.
                                    content: 'You are offline now, please check internet connection.' // hides content block.
                                });
         }

@@ -195,6 +195,7 @@ var PackingFlowScreen = React.createClass({
   },
   componentDidMount: function() {
     $("#packingScreen").modal("show");
+    socket.removeAllListeners();
     React.findDOMNode(this.refs.packing_video).play();
     this.subscribeToFirebase();
  /*$('#scanInput').focus(function(){
@@ -210,7 +211,7 @@ $("#scanInput").focusout(function(){
        $("#scanInput").attr('maxlength','9');
 });
       // $("#scanInput").on('change',function(){
-         socket.on('chat message', function(data){
+         socket.on('data-matrix', function(data){
                //clientValue = data;
                //alert(data);
 
@@ -232,13 +233,10 @@ $("#scanInput").focusout(function(){
                                                                   {
                                                                   $("#scanInput").val('');
                                                                       //console.log("DataMatrix code already exists");
-                                                                         	$.confirm({
+                                                                         	$.alert({
                                                                                                                icon:'fa fa-exclamation-triangle',
                                                                                                               columnClass: 'col-md-12',
                                                                                                               title: 'Scanning Status',
-                                                                                                              cancelButton: Ok, // hides the cancel button.
-                                                                                                              confirmButton: false, // hides the confirm button.
-                                                                                                              closeIcon: false, // hides the close icon.
                                                                                                               content: 'The Scanned Code Already Exists.' // hides content block.
                                                                                      });
 

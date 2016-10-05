@@ -486,6 +486,7 @@ var RemoveItemDialog = React.createClass({
   },
   componentDidMount: function() {
    $.material.init();
+   socket.removeAllListeners();
   $("#removeItemDialog").modal("show");
   $('body').on('shown.bs.modal', '#removeItemDialog', function () {
          $("#txt_remove").focus();
@@ -497,7 +498,7 @@ var RemoveItemDialog = React.createClass({
    console.log(this.props.packingData);
    var p_id=this.props.poId;
    // $("#txt_remove").change(function(){
-     socket.on('chat message', function(data){
+     socket.on('data-matrix', function(data){
      var Ispopup = $("#removeItemDialog").data('bs.modal').isShown;
      //alert(Ispopup);
      //var p_id=this.props.poId;i
@@ -550,13 +551,10 @@ var RemoveItemDialog = React.createClass({
                                                                 p_id + "/" +
                                                                  itemId);
                                    firebaseRefTest.child("barcodes").child(key).remove();
-                                   	$.confirm({
+                                   	$.alert({
                                      icon:'fa fa-trash-o',
                                      columnClass: 'col-md-12',
                                      title: 'Alert',
-                                     cancelButton: Ok, // hides the cancel button.
-                                     confirmButton: false, // hides the confirm button.
-                                     closeIcon: false, // hides the close icon.
                                      content: 'Succesfully removed.' // hides content block.
                                      });
                                      isFromPOListView=false;
@@ -570,13 +568,10 @@ var RemoveItemDialog = React.createClass({
                         $("#txt_remove").val("");
                         }else
                          {
-                         $.confirm({
+                         $.alert({
                          icon:'fa fa-print',
                          columnClass: 'col-md-12',
                          title: 'Alert',
-                         cancelButton: Ok, // hides the cancel button.
-                         confirmButton: false, // hides the confirm button.
-                         closeIcon: false, // hides the close icon.
                          content: 'Item not yet scanned.' // hides content block.
                          });
                          }
