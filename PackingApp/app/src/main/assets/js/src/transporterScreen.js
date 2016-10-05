@@ -173,9 +173,9 @@ var TransporterDialog = React.createClass({
                                    icon:'fa fa-exclamation-triangle',
                                    columnClass: 'col-md-12',
                                    title: 'Internet Status',
-                                   cancelButton: false, // hides the cancel button.
+                                   cancelButton: Ok, // hides the cancel button.
                                    confirmButton: false, // hides the confirm button.
-                                   closeIcon: true, // hides the close icon.
+                                   closeIcon: false, // hides the close icon.
                                    content: 'You are offline now, please check internet connection.' // hides content block.
                                });
         }

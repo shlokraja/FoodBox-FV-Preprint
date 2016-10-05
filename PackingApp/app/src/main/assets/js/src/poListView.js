@@ -554,9 +554,9 @@ var RemoveItemDialog = React.createClass({
                                      icon:'fa fa-trash-o',
                                      columnClass: 'col-md-12',
                                      title: 'Alert',
-                                     cancelButton: false, // hides the cancel button.
+                                     cancelButton: Ok, // hides the cancel button.
                                      confirmButton: false, // hides the confirm button.
-                                     closeIcon: true, // hides the close icon.
+                                     closeIcon: false, // hides the close icon.
                                      content: 'Succesfully removed.' // hides content block.
                                      });
                                      isFromPOListView=false;
@@ -574,9 +574,9 @@ var RemoveItemDialog = React.createClass({
                          icon:'fa fa-print',
                          columnClass: 'col-md-12',
                          title: 'Alert',
-                         cancelButton: false, // hides the cancel button.
+                         cancelButton: Ok, // hides the cancel button.
                          confirmButton: false, // hides the confirm button.
-                         closeIcon: true, // hides the close icon.
+                         closeIcon: false, // hides the close icon.
                          content: 'Item not yet scanned.' // hides content block.
                          });
                          }

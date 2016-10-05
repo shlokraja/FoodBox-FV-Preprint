@@ -111,26 +111,6 @@
 <script src="js/vendor/fastclick.js"></script>
 
 <script src="js/vendor/socket.io.js"></script>
-
-<script>
-       var socket = io.connect('http://192.168.1.100:3000');
-        // var socket = io.connect({'forceNew': true, 'heartbeat interval': 5, 'heartbeat timeout': 10});
-        var clientValue = "";
-
-       // socket.emit('test', {'test': 'Hello World'});
-
-
-// Hack to prevent the latest chrome browser from throwing error
-// when a file is loaded locally
-$(document).bind('mobileinit',function(){
-    $.mobile.changePage.defaults.changeHash = false;
-    $.mobile.hashListeningEnabled = false;
-    $.mobile.pushStateEnabled = false;
-});
-$(function() {
-    FastClick.attach(document.body);
-});
-</script>
 <script src="js/vendor/jquery.mobile.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/ripples.min.js"></script>
@@ -150,6 +130,28 @@ $(function() {
 <script src="js/build/transporterScreen.js"></script>
 <script src="js/build/poListView.js"></script>
 <script src="js/build/app.js"></script>
+
+<script>
+var SCANNER_URL = simpleStorage.get("SCANNER_URL");
+       var socket = io.connect(SCANNER_URL);
+        // var socket = io.connect({'forceNew': true, 'heartbeat interval': 5, 'heartbeat timeout': 10});
+        var clientValue = "";
+
+       // socket.emit('test', {'test': 'Hello World'});
+
+
+// Hack to prevent the latest chrome browser from throwing error
+// when a file is loaded locally
+$(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+});
+$(function() {
+    FastClick.attach(document.body);
+});
+</script>
+
 <script>
   $(document).ready(function() {
 

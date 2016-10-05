@@ -236,9 +236,9 @@ $("#scanInput").focusout(function(){
                                                                                                                icon:'fa fa-exclamation-triangle',
                                                                                                               columnClass: 'col-md-12',
                                                                                                               title: 'Scanning Status',
-                                                                                                              cancelButton: false, // hides the cancel button.
+                                                                                                              cancelButton: Ok, // hides the cancel button.
                                                                                                               confirmButton: false, // hides the confirm button.
-                                                                                                              closeIcon: true, // hides the close icon.
+                                                                                                              closeIcon: false, // hides the close icon.
                                                                                                               content: 'The Scanned Code Already Exists.' // hides content block.
                                                                                      });
 
