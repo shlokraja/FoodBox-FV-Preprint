@@ -311,7 +311,7 @@ $("#scanInput").focusout(function(){
       textAlign: 'center'
     };
     var scanInputStyle = {
-         opacity: 0
+         display: 'none'
         };
     return (
       <div id="packingScreen" ref="packingScreen" className="modal fade" tabIndex="-1">

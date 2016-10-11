@@ -390,10 +390,12 @@ renderApp.subscribeToFirebase();
       }
       var tdStyle = {
         padding: '5px',
+        width:'200px',
         textAlign: 'center'
       };
       var itemTdStyle = {
         padding: '5px',
+        width:'350px',
         textAlign: 'left'
       };
       var toPack= item.total_qty - item.packed_qty - current_packed_qty;
@@ -420,7 +422,7 @@ renderApp.subscribeToFirebase();
                         item.outlet_id,
                         item.vendor_name,
                         item.outlet_name)}>PACK</button>&nbsp;&nbsp;
-<button id={item.food_item_id} visible="false" className="btn btn-raised btn-material-pink-800" onClick={this.printQR.bind(this,
+<button id={item.food_item_id} style={{display: 'none'}} className="btn btn-raised btn-material-pink-800" onClick={this.printQR.bind(this,
                         item.food_item_id,
                         item.master_id,
                         item.veg,
@@ -435,7 +437,7 @@ renderApp.subscribeToFirebase();
                         item.outlet_name,
                         "EXTRA")} >EXTRA</button>
           <div style={{display: 'inline-block', marginLeft: '5px'}}>
-          <span id={"qr-"+item.food_item_id}>0</span> extra QR
+         <span style={{display: 'none'}} id={"qr-"+item.food_item_id}>0</span>
           </div>
           </td>
         </tr>
@@ -452,7 +454,7 @@ renderApp.subscribeToFirebase();
               <table style={{margin: '0 auto', width: '700px'}}>
               <thead style={{borderTop: '1px solid black', borderBottom: '1px solid black'}}>
                 <tr>
-                  <th style={{width: '150px', padding: '5px', textAlign: 'center'}}>Item ID + Name</th>
+                  <th style={{width: '150px', padding: '5px', textAlign: 'center'}}>Item ID - Name</th>
                   <th style={{width: '75px', padding: '5px', textAlign: 'center'}}>Total</th>
                   <th style={{width: '75px', padding: '5px', textAlign: 'center'}}>To Pack</th>
                   <th style={{width: '300px', padding: '5px', textAlign: 'center'}}></th>
@@ -581,7 +583,8 @@ var RemoveItemDialog = React.createClass({
   render: function() {
   //console.log(this.props.packingData);
    var inputStyle = {
-           opacity: 0
+           opacity: 0,
+            display:'none'
           };
     return (
       <div id="removeItemDialog" className="modal fade" tabIndex="-1">
