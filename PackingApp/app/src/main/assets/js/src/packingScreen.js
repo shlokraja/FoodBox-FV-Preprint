@@ -216,66 +216,68 @@ $("#scanInput").focusout(function(){
                //alert(data);
 
          var IsPackingScreenOpen = $("#packingScreen").data('bs.modal').isShown;
-           if(IsPackingScreenOpen)
-           {
-           // Android.RemoveKeyPairValue(true);
-           var barcodeRef = Android.GetPODataFromSP(true);
-           if(barcodeRef!= undefined)
-           {
-           var barcodeRefValue = JSON.parse(Android.GetPODataFromSP(true));
-           var scannedCode = data;
-           if((barcodeRefValue != undefined) && (scannedCode != "") && (barcodeRefValue[RESTAURANT_ID] != undefined))
-           {
-           var isduplicate = false;
-           _.each(barcodeRefValue[RESTAURANT_ID].pos, function(obj) {
-                                       _.each(obj.items, function(item){
-                                        if(_.some(item.barcodes, {data_matrix:scannedCode}))
-                                                                  {
-                                                                  $("#scanInput").val('');
-                                                                      //console.log("DataMatrix code already exists");
-                                                                         	$.alert({
-                                                                                                               icon:'fa fa-exclamation-triangle',
-                                                                                                              columnClass: 'col-md-12',
-                                                                                                              title: 'Scanning Status',
-                                                                                                              content: 'The Scanned Code Already Exists.' // hides content block.
-                                                                                     });
+          if (IsPackingScreenOpen) {
+              // Android.RemoveKeyPairValue(true);
+              var barcodeRef = Android.GetPODataFromSP(true);
+              if (barcodeRef != undefined) {
+                  var barcodeRefValue = JSON.parse(Android.GetPODataFromSP(true));
+                  var scannedCode = data;
+                  if (scannedCode.toString().length > 9) {
+                      $.alert({
+                          icon: 'fa fa-exclamation-triangle',
+                          columnClass: 'col-md-12',
+                          title: 'Scanning Status',
+                          content: 'Barcode length should not be more than 9.' // hides content block.
+                      });
+                      return false;
+                  }
+                  if ((barcodeRefValue != undefined) && (scannedCode != "") && (barcodeRefValue[RESTAURANT_ID] != undefined)) {
+                      var isduplicate = false;
+                      _.each(barcodeRefValue[RESTAURANT_ID].pos, function (obj) {
+                          _.each(obj.items, function (item) {
+                              if (_.some(item.barcodes, { data_matrix: scannedCode })) {
+                                  $("#scanInput").val('');
+                                  //console.log("DataMatrix code already exists");
+                                  $.alert({
+                                      icon: 'fa fa-exclamation-triangle',
+                                      columnClass: 'col-md-12',
+                                      title: 'Scanning Status',
+                                      content: 'The Scanned Code Already Exists.' // hides content block.
+                                  });
 
-           isduplicate = true;
+                                  isduplicate = true;
 
-                                                                  }
-                                       });
-                                     });
-           if((!isduplicate))
-           {
-            console.log("Sealing Process");
-                                       //console.log($(this).val());
-                                                     var datamatrixcode = data;
-                                                     console.log(datamatrixcode);
-                                                     dataMatcode = data;
-                                                         // call the printQR function to print the qr code
+                              }
+                          });
+                      });
+                      if ((!isduplicate)) {
+                          console.log("Sealing Process");
+                          //console.log($(this).val());
+                          var datamatrixcode = data;
+                          console.log(datamatrixcode);
+                          dataMatcode = data;
+                          // call the printQR function to print the qr code
 
-                                                       sealingComplete();
-           }
+                          sealingComplete();
+                      }
 
-           }
-           else if(barcodeRefValue[RESTAURANT_ID] == undefined)
-           {
-           console.log("sealing when undefined");
+                  }
+                  else if (barcodeRefValue[RESTAURANT_ID] == undefined) {
+                      console.log("sealing when undefined");
                       var datamatrixcode = data;
                       console.log(datamatrixcode);
                       dataMatcode = data;
                       sealingComplete();
-           }
-           }
-           else
-           {
-            console.log("First time Sealing Process");
-           var datamatrixcode = data;
-           console.log(datamatrixcode);
-           dataMatcode = data;
-           sealingComplete();
-           }
-           }
+                  }
+              }
+              else {
+                  console.log("First time Sealing Process");
+                  var datamatrixcode = data;
+                  console.log(datamatrixcode);
+                  dataMatcode = data;
+                  sealingComplete();
+              }
+          }
            });
  },
   packingDone: function() {
@@ -326,7 +328,7 @@ $("#scanInput").focusout(function(){
 
               <div>
                 <div style={cardStyle}>
-                <img src={HQ_URL + "/food_item/tray_image/" + this.props.item_id} style={{height: '300px'}} />
+                    <img src={HQ_URL + "/food_item/tray_image/" + this.props.item_id} style={{height: '300px'}} />
                 </div>
 
                 <div style={cardStyle}>

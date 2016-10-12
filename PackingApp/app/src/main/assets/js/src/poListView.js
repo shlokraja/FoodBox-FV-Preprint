@@ -507,6 +507,16 @@ var RemoveItemDialog = React.createClass({
      if(Ispopup)
      {
     var removeCode = data;
+    if(removeCode.toString().length>9)
+    {
+       $.alert({
+               icon:'fa fa-exclamation-triangle',
+               columnClass: 'col-md-12',
+               title: 'Scanning Status',
+               content: 'Barcode length should not be more than 9.' // hides content block.
+               });
+    return false;
+    }
      var isdeleted;
      var value;
      var itemId;
