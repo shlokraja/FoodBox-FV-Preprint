@@ -196,7 +196,6 @@ var PackingFlowScreen = React.createClass({
   componentDidMount: function() {
     $("#packingScreen").modal("show");
     socket.removeAllListeners();
-    React.findDOMNode(this.refs.packing_video).play();
     this.subscribeToFirebase();
  /*$('#scanInput').focus(function(){
         console.log("In focus");
@@ -329,13 +328,6 @@ $("#scanInput").focusout(function(){
               <div>
                 <div style={cardStyle}>
                     <img src={HQ_URL + "/food_item/tray_image/" + this.props.item_id} style={{height: '300px'}} />
-                </div>
-
-                <div style={cardStyle}>
-                <video ref="packing_video" autoPlay="true" loop muted style={{height: '200px'}}>
-                  <source src="file:///sdcard/templates/packing.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-                </video>
                 </div>
               </div>
 
