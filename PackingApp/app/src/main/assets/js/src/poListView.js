@@ -206,6 +206,7 @@ renderApp.subscribeToFirebase();
   openPackingScreen: function(po_id,
       total_qty,
       packed_qty,
+      currentPackedQty,
       master_id,
       food_item_id,
       veg,
@@ -238,6 +239,21 @@ renderApp.subscribeToFirebase();
         vendor_name={vendor_name}
         outlet_name={outlet_name} />,
       document.getElementById('packingFlow'));
+
+if (currentPackedQty == 0) {
+
+	Android.priorLabelPrint(master_id,
+		veg,
+		ingredients1a,
+		ingredients1b,
+		ingredients2,
+		ingredients3,
+		side_order,
+		vendor_name,
+		outlet_name,
+		PRINTER_IP);
+
+}
   },
   RePrintQR: function(){
      if(! _.isEmpty(barcodeDetails))
@@ -270,6 +286,8 @@ renderApp.subscribeToFirebase();
                     outlet_name,
                     datamatrixcode,
                     source,
+                    total_qty,
+                    packed_qty,
                     event) {
     // Setting the timeout for enabling the box after 1 sec
     $("#"+food_item_id.toString()).prop('disabled', true);
@@ -373,6 +391,20 @@ renderApp.subscribeToFirebase();
                         PRINTER_IP,
                         datamatrixcode,
                         source);
+    var packedQty=packed_qty+1;
+    if(packedQty<total_qty)
+    {
+Android.priorLabelPrint(master_id,
+		veg,
+		ingredients1a,
+		ingredients1b,
+		ingredients2,
+		ingredients3,
+		side_order,
+		vendor_name,
+		outlet_name,
+		PRINTER_IP);
+    }
   },
   pad: function(num, size) {
     var s = String(num);
@@ -410,6 +442,7 @@ renderApp.subscribeToFirebase();
                         this.props.poId,
                         item.total_qty,
                         item.packed_qty,
+                        current_packed_qty,
                         item.master_id,
                         item.food_item_id,
                         item.veg,
