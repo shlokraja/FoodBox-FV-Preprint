@@ -30,7 +30,9 @@ var PackingFlowScreen = React.createClass({
                           this.props.vendor_name,
                           this.props.outlet_name,
                           dataMatcode,
-                          "NORMAL"
+                          "NORMAL",
+                          this.props.total_qty,
+                          this.state.packed_now
                           );
   },
   reprintBarcode: function()
@@ -47,7 +49,9 @@ var PackingFlowScreen = React.createClass({
                             this.props.outlet_id,
                             this.props.vendor_name,
                             this.props.outlet_name,
-                            "EXTRA");
+                            "EXTRA",
+                            this.props.total_qty,
+                            this.state.packed_now);
     //POItemRendered.RePrintQR();
     },
   barcodePrinted: function(barcode,datamatrixcode,origin) {

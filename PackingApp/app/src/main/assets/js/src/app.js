@@ -332,6 +332,15 @@ function barcodePrinted(barcode,datamatrixcode, error, source) {
   PackingFlowRendered.barcodePrinted(barcode,datamatrixcode, source);
 }
 
+function labelPrinted(message,error) {
+  if (error) {
+    $("#sealing_complete_btn").prop("disabled", false);
+    alert(message);
+    return;
+  }
+  return;
+}
+
 function sealingComplete() {
   console.log("Sealing is complete");
   if (PackingFlowRendered == undefined) {

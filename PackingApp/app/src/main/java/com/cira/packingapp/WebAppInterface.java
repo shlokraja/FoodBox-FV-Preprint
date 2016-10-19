@@ -68,6 +68,81 @@ public class WebAppInterface {
     }
 
     @JavascriptInterface
+    public void priorLabelPrint(String food_item_id,
+                           String veg,
+                           String ingredients1a,
+                           String ingredients1b,
+                           String ingredients2,
+                           String ingredients3,
+                           String side_order,
+                           String vendor_name,
+                           String outlet_name,
+                           String printer_ip) {
+
+     String printerString = loadPrinterFile(mContext,
+                "templates/Template_"+ vendor_name +".prn");
+        if (printerString.equalsIgnoreCase("")) {
+            // that means some error has happened
+            mWebview.post(new Runnable() {
+                @Override
+                public void run() {
+                    mWebview.evaluateJavascript("labelPrinted('Error in loading template file', true)", null);
+                }
+            });
+            return;
+        }
+        Log.d(MainActivity.TAG, "Loaded printer file");
+
+        // Replace the important tags in the template file
+        String ingredients1 = ingredients1a + " " + ingredients1b;
+        printerString = printerString.replace("SHTMP_Category_Name", veg);
+        printerString = printerString.replace("SHTMP_Ingredients1", ingredients1);
+        printerString = printerString.replace("SHTMP_Ingredients2", ingredients2);
+        printerString = printerString.replace("SHTMP_Ingredients3", ingredients3);
+        printerString = printerString.replace("SHTMP_Sides", side_order);
+        printerString = printerString.replace("SHTMP_Ingredients4", "");
+        printerString = printerString.replace("SHTMP_Ingredients5", "");
+        printerString = printerString.replace("SHTMP_Ingredients6", "");
+        printerString = printerString.replace("SHTMP_ItemCode", food_item_id);
+        printerString = printerString.replace("SHTMP_Land_Mark", outlet_name);
+        // first letter of outlet_name and then food_item_id
+        printerString = printerString.replace("SHTMP_Value1",
+                outlet_name.substring(0,1) + food_item_id);
+        Log.d(MainActivity.TAG, "The new output file is- " + printerString);
+
+        final String result = sendToRPi(printerString, printer_ip);
+        if (!result.equalsIgnoreCase("")) {
+            // that means some error has happened, trying again
+            final String try2 = sendToRPi(printerString, printer_ip);
+            if (!try2.equalsIgnoreCase("")) {
+                // error
+                mWebview.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        mWebview.evaluateJavascript("labelPrinted('"+try2+"', true)", null);
+                    }
+                });
+            } else {
+                // it passed on the second try
+                mWebview.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        mWebview.evaluateJavascript("labelPrinted('Label printed successfully', false)", null);
+                    }
+                });
+            }
+
+        } else {
+            mWebview.post(new Runnable() {
+                @Override
+                public void run() {
+                    mWebview.evaluateJavascript("labelPrinted('Label printed successfully', false)", null);
+                }
+            });
+        }
+    }
+
+    @JavascriptInterface
     public void printLabel(String food_item_id,
                            String veg,
                            String ingredients1a,
@@ -89,70 +164,6 @@ public class WebAppInterface {
                 mWebview.evaluateJavascript("barcodePrinted('" + barcode + "','"+datamatrixcode+"', false, '" + source + "')", null);
             }
         });
-
-     /*String printerString = loadPrinterFile(mContext,
-                "templates/Template_"+ vendor_name +".prn");
-        if (printerString.equalsIgnoreCase("")) {
-            // that means some error has happened
-            mWebview.post(new Runnable() {
-                @Override
-                public void run() {
-                    mWebview.evaluateJavascript("barcodePrinted('Error in loading template file', true, '"+ source +"')", null);
-                }
-            });
-            return;
-        }
-        Log.d(MainActivity.TAG, "Loaded printer file");
-
-        // Replace the important tags in the template file
-        String ingredients1 = ingredients1a + " " + ingredients1b;
-        printerString = printerString.replace("SHTMP_Category_Name", veg);
-        printerString = printerString.replace("SHTMP_Ingredients1", ingredients1);
-        printerString = printerString.replace("SHTMP_Ingredients2", ingredients2);
-        printerString = printerString.replace("SHTMP_Ingredients3", ingredients3);
-        printerString = printerString.replace("SHTMP_Sides", side_order);
-        printerString = printerString.replace("SHTMP_Ingredients4", "");
-        printerString = printerString.replace("SHTMP_Ingredients5", "");
-        printerString = printerString.replace("SHTMP_Ingredients6", "");
-        printerString = printerString.replace("SHTMP_ItemCode", food_item_id);
-        printerString = printerString.replace("SHTMP_Land_Mark", outlet_name);
-        printerString = printerString.replace("SHTMP_QRValue", barcode);
-        printerString = printerString.replace("SHTMP_Value2", time);
-        // first letter of outlet_name and then food_item_id
-        printerString = printerString.replace("SHTMP_Value1",
-                outlet_name.substring(0,1) + food_item_id);
-        Log.d(MainActivity.TAG, "The new output file is- " + printerString);
-
-        final String result = sendToRPi(printerString, printer_ip);
-        if (!result.equalsIgnoreCase("")) {
-            // that means some error has happened, trying again
-            final String try2 = sendToRPi(printerString, printer_ip);
-            if (!try2.equalsIgnoreCase("")) {
-                // error
-                mWebview.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        mWebview.evaluateJavascript("barcodePrinted('"+try2+"', true, '"+ source +"')", null);
-                    }
-                });
-            } else {
-                // it passed on the second try
-                mWebview.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        mWebview.evaluateJavascript("barcodePrinted('"+barcode+"', false, '"+ source +"')", null);
-                    }
-                });
-            }
-
-        } else {
-            mWebview.post(new Runnable() {
-                @Override
-                public void run() {
-                    mWebview.evaluateJavascript("barcodePrinted('"+barcode+"', false, '"+ source +"')", null);
-                }
-            });
-        }*/
     }
 
     @JavascriptInterface
