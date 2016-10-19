@@ -235,7 +235,7 @@ var transactionCompletion = $.confirm({
                            });
     $.ajax({
        type: 'POST',
-       url: HQ_URL + '/food_vendor/new_batches',
+       url: HQ_URL + '/food_vendor/new_batches_preprint',
        data: {"batch":encodedValue},
        dataType: 'text',
        crossDomain: true,
