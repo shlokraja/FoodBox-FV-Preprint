@@ -331,7 +331,7 @@ $("#scanInput").focusout(function(){
 
               <div>
                 <div style={cardStyle}>
-                    <img src={HQ_URL + "/food_item/tray_image/" + this.props.item_id} style={{height: '300px'}} />
+                    <img src={HQ_URL + "/food_item/tray_image/" + this.props.item_id} style={{height: '300px',width: '726px'}} />
                 </div>
               </div>
 
